@@ -17,6 +17,7 @@ class TrainingFactory extends Factory
      */
     public function definition(): array
     {
+<<<<<<< HEAD
         $hours = [17, 18, 19, 20, 21];
         $minutes = [0, 15, 30, 45];
 
@@ -44,6 +45,10 @@ class TrainingFactory extends Factory
             'duration' => fake()->randomElement([45, 60, 90]),
             'price' => fake()->randomElement([1500, 2000, 2500, 3000]),
             'free_spots' => fake()->numberBetween(1, 20)
+=======
+        return [
+            //
+>>>>>>> 6f8773037771282fb169d7a9593c6a72dcd777ab
         ];
     }
 }

@@ -9,6 +9,7 @@ class Training extends Model
 {
     /** @use HasFactory<\Database\Factories\TrainingFactory> */
     use HasFactory;
+<<<<<<< HEAD
 
     protected $fillable = [
         'name',
@@ -22,4 +23,6 @@ class Training extends Model
     public function registrations(){
         return $this->hasMany(Registration::class);
     }
+=======
+>>>>>>> 6f8773037771282fb169d7a9593c6a72dcd777ab
 }
