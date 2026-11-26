@@ -1,0 +1,59 @@
+GET http://127.0.0.1:8000/api/screenings?sort=ticket_price
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/screenings?sort=ticket_price&page=8
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/screenings?room=3-es%20terem
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/screenings?movie_id=1
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/screenings?search=kereszt
+Accept: application/json
+
+
+###
+
+GET http://127.0.0.1:8000/api/screenings/1
+Accept: application/json
+
+###
+
+
+POST http://127.0.0.1:8000/api/screenings
+Accept: application/json
+Content-Type: application/json
+
+{
+    "movie_id": 5,
+    "room": "3-es terem",
+    "starts_at": "2026-12-14 19:45:00",
+    "ticket_price": 3490,
+    "free_seats": 100
+}
+
+###
+
+PATCH  http://127.0.0.1:8000/api/screenings/46
+Accept: application/json
+Content-Type: application/json
+
+{
+    "ticket_price": 4000
+}
+
+###
+
+DELETE http://127.0.0.1:8000/api/screenings/10
+Accept: application/json
+
